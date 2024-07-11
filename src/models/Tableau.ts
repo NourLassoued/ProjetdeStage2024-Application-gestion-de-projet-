@@ -5,6 +5,6 @@ export class Tableau {
     idTableau?: number;
     nom?: string;
     description?: string;
-    proprietaire!: Utilisateur; // Assuming Utilisateur interface matches User structure
+    proprietaire?: Utilisateur | null; 
     projets!: Projet[];
   }

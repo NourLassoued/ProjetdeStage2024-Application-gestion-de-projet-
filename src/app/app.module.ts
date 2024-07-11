@@ -16,6 +16,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { PasswordResetComponent } from './password-reset/password-reset.component';
 import { PasswordResettComponent } from './password-resett/password-resett.component';
 import { CodeOtpComponent } from './code-otp/code-otp.component';
+import { BackAdminComponent } from './back-admin/back-admin.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
+import { UserprofileComponent } from './userprofile/userprofile.component';
+import { TableuseerComponent } from './tableuseer/tableuseer.component';
+import { ProjectuserComponent } from './projectuser/projectuser.component';
+import { CarteuserComponent } from './carteuser/carteuser.component';
+
 
 @NgModule({
   declarations: [
@@ -26,13 +35,19 @@ import { CodeOtpComponent } from './code-otp/code-otp.component';
     PasswordResetComponent,
     PasswordResettComponent,
     CodeOtpComponent,
-   
+    BackAdminComponent,
+    UserprofileComponent,
+    TableuseerComponent,
+    ProjectuserComponent,
+    CarteuserComponent,
+  
  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatTableModule,
     FormsModule,
     MatInputModule,
     MatFormFieldModule,
@@ -40,7 +55,11 @@ import { CodeOtpComponent } from './code-otp/code-otp.component';
     MatToolbarModule,
     HttpClientModule,
     MatSnackBarModule, // Importez MatSnackBarModule ici
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatIconModule,
+    MatSelectModule,
+    MatFormFieldModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

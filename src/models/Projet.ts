@@ -8,5 +8,9 @@ export class Projet {
     description?: string;
     tableau!: Tableau; // Assuming Tableau interface matches the structure
     cartes!: Carte[];
-    utilisateurs!: Utilisateur[]; // Assuming Utilisateur interface matches the structure
+    utilisateurs!: Utilisateur[]; 
+    showFullDescription?: boolean;
+    nombreMembres?: number;
+    membersList?: any[]; 
+    showMembersList?: boolean; 
   }

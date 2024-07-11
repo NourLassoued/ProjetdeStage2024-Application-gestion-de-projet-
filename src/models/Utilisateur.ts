@@ -10,6 +10,7 @@ export class Utilisateur {
     lastname?: string;
     email?: string;
     password?: string;
+     image?:string;
     role?: Role; // Ensure Role is defined in Angular if not directly imported
     tokens!: Token[];
     tableaux!: Tableau[];
